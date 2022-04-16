@@ -1,0 +1,97 @@
+<form novalidate autocomplete="off" [formGroup]="formGroup" (ngSubmit)="create()">
+  <div class="animated fadeIn row mb-2">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-primary pull-right ml-2" (click)="create()" [disabled]="!formGroup.valid"><i class="fa fa-save"></i> Save</button>
+    </div>
+  </div>
+  <div class="animated fadeIn row">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Create a Country</strong>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="form-group required">
+                <label>Name</label>
+                <input formControlName="name" class="form-control" [ngClass]="getFormClasses('name')" placeholder="Enter Name" />
+                <div class="invalid-feedback">Please enter a name</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-group required">
+                <label>Native</label>
+                <input formControlName="native" class="form-control" [ngClass]="getFormClasses('native')" placeholder="Enter native" />
+                <div class="invalid-feedback">Please enter a native</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Alpha 2</label>
+                <input formControlName="alpha2" class="form-control" [ngClass]="getFormClasses('alpha2')" placeholder="Enter Alpha 2" />
+                <div class="invalid-feedback">Please enter a valid code (Two capital letters)</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Alpha 3</label>
+                <input formControlName="alpha3" class="form-control" [ngClass]="getFormClasses('alpha3')" placeholder="Enter Alpha 3" />
+                <div class="invalid-feedback">Please enter a valid code (Three capital letters)</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>ISD</label>
+                <input formControlName="isd" class="form-control" [ngClass]="getFormClasses('isd')" placeholder="Enter ISD" />
+                <div class="invalid-feedback">Please enter an ISD</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Capital</label>
+                <input formControlName="capital" class="form-control" [ngClass]="getFormClasses('capital')" placeholder="Enter Capital" />
+                <div class="invalid-feedback">Please enter a Capital</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Continent</label>
+                <input formControlName="continent" class="form-control" [ngClass]="getFormClasses('continent')" placeholder="Enter continent" />
+                <div class="invalid-feedback">Please enter a continent</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Sub Continent</label>
+                <input formControlName="subcontinent" class="form-control" [ngClass]="getFormClasses('subcontinent')" placeholder="Enter sub continent" />
+                <div class="invalid-feedback">Please enter a sub continent</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Currency</label>
+                <input formControlName="currency" class="form-control" [ngClass]="getFormClasses('currency')" placeholder="Enter currency" />
+                <div class="invalid-feedback">Please enter a currency</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Emoji</label>
+                <input formControlName="emoji" class="form-control" [ngClass]="getFormClasses('emoji')" placeholder="Enter emoji" />
+                <div class="invalid-feedback">Please enter an emoji</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-group required">
+                <label>Emoji Unicode</label>
+                <input formControlName="emojiUnicode" class="form-control" [ngClass]="getFormClasses('emojiUnicode')" placeholder="Enter emoji Unicode" />
+                <div class="invalid-feedback">Please enter an emoji Unicode</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

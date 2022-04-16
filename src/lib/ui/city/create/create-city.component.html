@@ -1,0 +1,66 @@
+<form novalidate autocomplete="off" [formGroup]="formGroup" (ngSubmit)="create()">
+  <div class="animated fadeIn row mb-2">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-primary pull-right ml-2" [disabled]="!formGroup.valid"><i class="fa fa-save"></i> Save</button>
+    </div>
+  </div>
+  <div class="animated fadeIn row">
+    <div class="col-md-4 col-sm-12">
+      <div class="card" #formCard>
+        <div class="card-header">
+          <strong>Create a City</strong>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <div class="form-group required">
+                <label>Country</label>
+                <select formControlName="countryId" class="form-control" (change)="searchState($event)" [ngClass]="getFormClasses('countryId')">
+                  <option disabled selected value="0">Select Country</option>
+                  <option *ngFor="let country of countryList" value="{{ country.id }}">
+                    {{ country.name }}
+                  </option>
+                </select>
+                <div class="invalid-feedback">Please select a country</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <div class="form-group required">
+                <label>State</label>
+                <select formControlName="stateId" class="form-control" [ngClass]="getFormClasses('stateId')">
+                  <option disabled selected value="0">Select State</option>
+                  <option *ngFor="let state of stateList" value="{{ state.id }}">
+                    {{ state.name }}
+                  </option>
+                </select>
+                <div class="invalid-feedback">Please select a state</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <div class="form-group required">
+                <label>Name</label>
+                <input formControlName="name" class="form-control" [ngClass]="getFormClasses('name')" placeholder="Enter Name" />
+                <div class="invalid-feedback">Please enter a name</div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="form-group required">
+                <label>Latitude</label>
+                <input formControlName="latitude" class="form-control" [ngClass]="getFormClasses('latitude')" placeholder="Enter latitude" />
+                <div class="invalid-feedback">Please enter a latitude</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-group required">
+                <label>Longitude</label>
+                <input formControlName="longitude" class="form-control" [ngClass]="getFormClasses('longitude')" placeholder="Enter longitude" />
+                <div class="invalid-feedback">Please enter a longitude</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
