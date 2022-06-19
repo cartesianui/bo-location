@@ -21,7 +21,7 @@ import { EditCityComponent } from './ui/city/edit/edit-city.component';
 import { EditCountryComponent } from './ui/country/edit/edit-country.component';
 import { DetailLocationComponent } from './ui/location/detail/detail-location.component';
 import { EditStateComponent } from './ui/state/edit/edit-state.component';
-import { NgFormModule } from '@cartesianui/ng-form';
+import { FormsModule as CartesianFormsMoudle } from '@cartesianui/forms';
 
 @NgModule({
   declarations: [
@@ -47,7 +47,7 @@ import { NgFormModule } from '@cartesianui/ng-form';
     NgxDatatableModule,
     FormsModule,
     ReactiveFormsModule,
-    NgFormModule
+    CartesianFormsMoudle
   ],
   providers: [LocationHttpService, LocationSandbox]
 })
