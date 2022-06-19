@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WhereItem } from '@cartesianui/ng-axis';
+import { WhereItem } from '@cartesianui/core';
 
 @Injectable()
 export class SearchCityForm {

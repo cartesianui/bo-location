@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, Injector, OnDestroy, OnInit, View
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { RequestCriteria } from '@cartesianui/ng-axis';
+import { RequestCriteria } from '@cartesianui/core';
 import { BaseComponent } from '@cartesianui/common';
 import { LocationSandbox } from '../../../location.sandbox';
 import { State, City, Country, SearchCountryForm, SearchStateForm } from '../../../models';

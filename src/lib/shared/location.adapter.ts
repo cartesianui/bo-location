@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { convertObjectKeysToCamel } from '@cartesianui/ng-axis';
+import { convertObjectKeysToCamel } from '@cartesianui/core';
 
 @Injectable()
 export class LocationAdapter {

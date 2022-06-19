@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, Injector, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Validators } from '@angular/forms';
 import { BaseComponent } from '@cartesianui/common';
-import { RequestCriteria } from '@cartesianui/ng-axis';
+import { RequestCriteria } from '@cartesianui/core';
 import { Subscription } from 'rxjs';
 import { FormControl, FormGroup } from '@angular/forms';
 import { LocationSandbox } from '../../../location.sandbox';

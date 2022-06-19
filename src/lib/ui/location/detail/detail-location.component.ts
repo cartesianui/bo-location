@@ -3,7 +3,7 @@ import { Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { BaseComponent } from '@cartesianui/common';
-import { RequestCriteria } from '@cartesianui/ng-axis';
+import { RequestCriteria } from '@cartesianui/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { LocationSandbox } from '../../../location.sandbox';
 import { State, City, Country, Location, SearchCountryForm, SearchStateForm, SearchCityForm } from '../../../models';
