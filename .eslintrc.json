@@ -10,8 +10,8 @@
       ],
       "parserOptions": {
         "project": [
-          "projects/ng-location/tsconfig.lib.json",
-          "projects/ng-location/tsconfig.spec.json"
+          "projects/bo-location/tsconfig.lib.json",
+          "projects/bo-location/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

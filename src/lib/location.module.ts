@@ -51,4 +51,4 @@ import { FormsModule as CartesianFormsMoudle } from '@cartesianui/forms';
   ],
   providers: [LocationHttpService, LocationSandbox]
 })
-export class NgLocationModule {}
+export class LocationModule {}

@@ -1,4 +1,4 @@
 /*
- * Public API Surface of ng-location
+ * Public API Surface of bo-location
  */
 export * from './lib';
