@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpService, POST, GET, Body, Criteria, DefaultHeaders, Adapter, RequestCriteria, Path, DELETE, PUT } from '@cartesianui/ng-axis';
+import { HttpService, POST, GET, Body, Criteria, DefaultHeaders, Adapter, RequestCriteria, Path, DELETE, PUT } from '@cartesianui/core';
 import { SearchCityForm, SearchCountryForm, SearchLocationForm, SearchStateForm } from '../models/form/';
 import { City, State, Country, Location } from '../models/domain/';
 

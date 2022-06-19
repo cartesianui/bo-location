@@ -1,7 +1,7 @@
 import { Injectable, Injector } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Subscription } from 'rxjs';
-import { RequestCriteria } from '@cartesianui/ng-axis';
+import { RequestCriteria } from '@cartesianui/core';
 import { Sandbox } from '@cartesianui/common';
 import { SearchCityForm, SearchCountryForm, SearchLocationForm, SearchStateForm } from './models/form/';
 import { City, State, Country, Location } from './models/domain/';
